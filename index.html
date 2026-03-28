@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seattle Basketball Team</title>
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Bebas+Neue&display=swap');
 
@@ -122,6 +124,27 @@
         .corner--tr { top: 20px; right: 20px; border-top-width: 3px; border-right-width: 3px; }
         .corner--bl { bottom: 20px; left: 20px; border-bottom-width: 3px; border-left-width: 3px; }
         .corner--br { bottom: 20px; right: 20px; border-bottom-width: 3px; border-right-width: 3px; }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            color: rgba(255, 194, 0, 0.35);
+            z-index: 1;
+        }
+
+        footer a {
+            color: rgba(255, 194, 0, 0.5);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #FFC200;
+        }
     </style>
 </head>
 <body>
@@ -142,5 +165,9 @@
         <p class="tagline">The Rain Never Stopped Us</p>
         <div class="badge">seattlebasketballteam.com</div>
     </div>
+
+    <footer>
+        &copy; 2026 <a href="https://www.yourtinytools.com">tinytools llc</a> &nbsp;&bull;&nbsp; Small Batch, Crafted in Brooklyn 🗽
+    </footer>
 </body>
 </html>

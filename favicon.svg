@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <rect width="16" height="16" rx="2" fill="#00653A"/>
+  <!-- Basketball circle -->
+  <circle cx="8" cy="8" r="5.5" fill="none" stroke="#FFC200" stroke-width="1.2"/>
+  <!-- Basketball seam lines -->
+  <line x1="8" y1="2.5" x2="8" y2="13.5" stroke="#FFC200" stroke-width="0.8"/>
+  <line x1="2.5" y1="8" x2="13.5" y2="8" stroke="#FFC200" stroke-width="0.8"/>
+  <!-- Curved seams -->
+  <path d="M5.5 2.8C4.5 5 4.5 11 5.5 13.2" fill="none" stroke="#FFC200" stroke-width="0.7"/>
+  <path d="M10.5 2.8C11.5 5 11.5 11 10.5 13.2" fill="none" stroke="#FFC200" stroke-width="0.7"/>
+</svg>
