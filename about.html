@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Seattle Basketball Team</title>
+    <meta name="description" content="Tracking the return of NBA basketball to Seattle. Following every development as the league comes back to the Emerald City.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://seattlebasketballteam.com/about">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About — Seattle Basketball Team">
+    <meta property="og:description" content="Tracking the return of NBA basketball to Seattle.">
+    <meta property="og:url" content="https://seattlebasketballteam.com/about">
+
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Bebas+Neue&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #00653A;
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'Oswald', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 300px 300px at 50% 30%, transparent 60%, rgba(0, 80, 45, 0.6) 61%, transparent 62%),
+                linear-gradient(rgba(255, 194, 0, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 194, 0, 0.03) 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 640px;
+            padding: 4rem 2rem 6rem;
+            z-index: 1;
+        }
+
+        .back {
+            display: inline-block;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: rgba(255, 194, 0, 0.4);
+            text-decoration: none;
+            margin-bottom: 3rem;
+        }
+
+        .back:hover {
+            color: #FFC200;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            line-height: 0.95;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFC200;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+            margin-bottom: 2rem;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: #FFC200;
+            opacity: 0.5;
+            margin-bottom: 2.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.8;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: #FFC200;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .corner {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            border-color: rgba(255, 194, 0, 0.15);
+            border-style: solid;
+            border-width: 0;
+        }
+        .corner--tl { top: 20px; left: 20px; border-top-width: 3px; border-left-width: 3px; }
+        .corner--tr { top: 20px; right: 20px; border-top-width: 3px; border-right-width: 3px; }
+        .corner--bl { bottom: 20px; left: 20px; border-bottom-width: 3px; border-left-width: 3px; }
+        .corner--br { bottom: 20px; right: 20px; border-bottom-width: 3px; border-right-width: 3px; }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            color: rgba(255, 194, 0, 0.35);
+            z-index: 1;
+        }
+
+        footer a {
+            color: rgba(255, 194, 0, 0.5);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #FFC200;
+        }
+    </style>
+</head>
+<body>
+    <div class="corner corner--tl"></div>
+    <div class="corner corner--tr"></div>
+    <div class="corner corner--bl"></div>
+    <div class="corner corner--br"></div>
+
+    <div class="container">
+        <a href="/" class="back">&larr; Home</a>
+
+        <h1>About</h1>
+        <div class="divider"></div>
+
+        <p>
+            On March 25, 2026, the NBA Board of Governors voted to approve the exploration of expansion — and Seattle is one of two cities in the running. After losing the SuperSonics to Oklahoma City in 2008, the Emerald City has waited nearly two decades for this moment.
+        </p>
+
+        <p>
+            This site tracks the progress of NBA basketball returning to Seattle: the ownership groups, the arena developments, the league timeline, and every step along the way. Seattle has never stopped being a basketball city — from the Sonics' 1979 championship to the Storm's continued success.
+        </p>
+
+        <p>
+            We're a small independent project by <a href="https://www.yourtinytools.com">tinytools llc</a>, built to document the journey from vote to tip-off. No official affiliation with the NBA or any ownership group.
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2026 <a href="https://www.yourtinytools.com">tinytools llc</a> &nbsp;&bull;&nbsp; Small Batch, Crafted in Brooklyn 🗽
+    </footer>
+</body>
+</html>
