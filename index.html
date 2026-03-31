@@ -36,7 +36,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
+            overflow-x: hidden;
             position: relative;
         }
 
@@ -127,9 +127,83 @@
             color: rgba(255, 194, 0, 0.4);
         }
 
+        .newsletter {
+            margin-top: 2.5rem;
+            padding: 1.5rem 2rem;
+            border: 2px solid rgba(255, 194, 0, 0.2);
+            background: rgba(0, 0, 0, 0.15);
+            max-width: 420px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .newsletter-label {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(1rem, 2.5vw, 1.4rem);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #FFC200;
+            margin-bottom: 0.4rem;
+        }
+
+        .newsletter-sub {
+            font-size: clamp(0.6rem, 1.2vw, 0.75rem);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.45);
+            margin-bottom: 1rem;
+        }
+
+        .newsletter form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .newsletter input[type="text"],
+        .newsletter input[type="email"] {
+            width: 100%;
+            padding: 0.7rem 1rem;
+            font-family: 'Oswald', sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            border: 2px solid rgba(255, 194, 0, 0.3);
+            background: rgba(0, 0, 0, 0.25);
+            color: #fff;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .newsletter input[type="text"]::placeholder,
+        .newsletter input[type="email"]::placeholder {
+            color: rgba(255, 255, 255, 0.35);
+        }
+
+        .newsletter input[type="text"]:focus,
+        .newsletter input[type="email"]:focus {
+            border-color: #FFC200;
+        }
+
+        .newsletter button[type="submit"] {
+            padding: 0.7rem 1rem;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            background: #FFC200;
+            color: #00653A;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .newsletter button[type="submit"]:hover {
+            background: #ffd24d;
+        }
+
         /* Retro corner accents */
         .corner {
-            position: fixed;
+            position: absolute;
             width: 60px;
             height: 60px;
             border-color: rgba(255, 194, 0, 0.15);
@@ -142,11 +216,9 @@
         .corner--br { bottom: 20px; right: 20px; border-bottom-width: 3px; border-right-width: 3px; }
 
         footer {
-            position: fixed;
-            bottom: 0;
             width: 100%;
             text-align: center;
-            padding: 1rem;
+            padding: 2rem 1rem 1rem;
             font-size: 0.7rem;
             letter-spacing: 0.15em;
             color: rgba(255, 194, 0, 0.35);
@@ -180,6 +252,20 @@
         <div class="divider"></div>
         <p class="tagline">The Rain Never Stopped Us</p>
         <div class="badge">seattlebasketballteam.com</div>
+
+        <div class="newsletter">
+            <p class="newsletter-label">Stay in the Game</p>
+            <p class="newsletter-sub">News, history &amp; the fight for Seattle basketball</p>
+            <form
+                action="https://buttondown.com/api/emails/embed-subscribe/seattlebasketball"
+                method="post"
+                target="popupwindow"
+            >
+                <input type="text" name="metadata__name" placeholder="Your name" />
+                <input type="email" name="email" placeholder="your@email.com" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
     </div>
 
     <footer>
